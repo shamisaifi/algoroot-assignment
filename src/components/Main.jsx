@@ -14,7 +14,7 @@ const Main = () => {
             <Sidebar />
           </div>
 
-          <div className="flex-1 p-10 overflow-auto">
+          <div className="flex-1 p-0 md:p-10 sm:10 overflow-auto">
             <Hero />
           </div>
         </div>

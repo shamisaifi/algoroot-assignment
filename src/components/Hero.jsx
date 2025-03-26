@@ -46,8 +46,8 @@ const Hero = () => {
       : [...filteredData].reverse().slice(firstIndex, lastIndex);
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 border border-gray-300 rounded-xl">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+    <div className="p-1 mt-18 sm:p-6 md:p-8 border border-gray-300 rounded-xl">
+      <div className="flex flex-col md:flex-col justify-between items-center gap-4">
         <div>
           <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
             <FaComment className="text-green-500" /> User Comments
@@ -105,7 +105,7 @@ const Hero = () => {
         </table>
       </div>
 
-      <div className="my-6 flex flex-col sm:flex-row justify-center items-center gap-3">
+      <div className="my-6 flex flex-row sm:flex-row justify-center items-center gap-3">
         <button
           onClick={() => setCurrentPage(currentPage - 1)}
           disabled={currentPage <= 1}
