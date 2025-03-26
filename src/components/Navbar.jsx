@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full border border-gray-300 backdrop-blur px-15 py-3 flex justify-between items-center z-50">
       <div className="flex items-center gap-3">
         <img
-          src="/public/images/Screenshot_From_2025-03-26_13-52-21-removebg-preview.png"
+          src="/images/Screenshot_From_2025-03-26_13-52-21-removebg-preview.png"
           alt="Logo"
           className="w-12 h-12"
         />
@@ -41,7 +41,10 @@ const Navbar = () => {
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg overflow-hidden">
               <p className="px-4 py-2 border-b text-sm text-gray-700">
-                Welcome, <span className="text-green-600 font-bold">{state.user?.username}</span>
+                Welcome,{" "}
+                <span className="text-green-600 font-bold">
+                  {state.user?.username}
+                </span>
               </p>
               <button
                 className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-200 w-full"
